@@ -19,14 +19,13 @@
 // };
 
 // init();
-const express = require('express')
-https://runkit.com/const app = express()
-const port = 5000
+const express = require("express");
+const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.get("/", (request, response) => {
+    response.send("Hi there");
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(5000, () => {
+    console.log("Listen on the port 5000...");
+});
